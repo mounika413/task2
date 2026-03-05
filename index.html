@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>College Assignment Submission Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h2>College Portal</h2>
+        <ul>
+            <li><a href="#submit">Submit Assignment</a></li>
+            <li><a href="#records">Submission Records</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Layout -->
+    <div class="container">
+
+        <!-- Assignment Form -->
+        <section id="submit" class="card">
+            <h2>Assignment Submission Form</h2>
+
+            <form id="assignmentForm">
+                <input type="text" id="studentName" placeholder="Student Name">
+                <small class="error" id="nameError"></small>
+
+                <input type="text" id="rollNumber" placeholder="Roll Number">
+                <small class="error" id="rollError"></small>
+
+                <input type="text" id="subject" placeholder="Subject Name">
+                <small class="error" id="subjectError"></small>
+
+                <input type="date" id="submissionDate">
+                <small class="error" id="dateError"></small>
+
+                <button type="submit">Submit Assignment</button>
+            </form>
+        </section>
+
+        <!-- Submission Records -->
+        <section id="records" class="card">
+            <h2>Submitted Assignments</h2>
+            <ul id="assignmentList"></ul>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
